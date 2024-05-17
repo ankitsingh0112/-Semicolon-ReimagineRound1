@@ -31,14 +31,14 @@ hr {
 }
 
 button {
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
     border-radius: 3px;
     width: 100px;
     height: 40px;
     display: block;
     cursor: pointer;
-    background: linear-gradient(to right, #FFBB1A 50%, black 50%);
+    background: linear-gradient(to right, #FFBB1A 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .3s ease-out;
@@ -46,6 +46,7 @@ button {
 
 button:hover {
     background-position: left bottom;
+    color: white;
 }
 
 .header-scrolled {
@@ -290,9 +291,9 @@ main {
     flex-wrap: wrap-reverse;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
-    background-color: black;
-    color: white;
+    height: 80vh;
+    /*background-color: black;*/
+    color: black;
 }
 
 #phone-cover .container:nth-child(2) {
@@ -310,9 +311,9 @@ main {
     height: 400px;
     position: absolute;
     top: 0%;
-    left: -8%;
+    left: 0%;
     overflow: visible;
-    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.53));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.53));
 }
 
 #img1 {
@@ -428,7 +429,7 @@ main {
 }
 
 .container .boxes {
-    margin-top: 3rem;
+    padding: 3rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -586,7 +587,7 @@ footer {
         top: 18%;
         left: 20%;
     }
-    
+
     .tag-line p {
         font-size: 1.15rem;
     }
@@ -612,9 +613,17 @@ footer {
         left: 16%;
         line-height: 80vh;
     }
-    
+
     .tag-line p {
         font-size: 1.05rem;
+    }
+
+    .Indian-flag {
+        height: 5vh;
+    }
+
+    .chakra img {
+        width: 60px;
     }
 }
 
@@ -631,13 +640,86 @@ footer {
         left: 14%;
         line-height: 50vh;
     }
-    
+
     .tag-line p {
         font-size: 0.9rem;
     }
 
     .banner {
         height: 40vh;
+    }
+
+    .Indian-flag {
+        height: 4vh;
+    }
+
+    .chakra img {
+        width: 50px;
+    }
+
+    .Indian-flag h3 {
+        font-size: 1.25rem;
+    }
+
+
+    #phone-cover .container {
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+        width: 100%;
+        height: 90vh;
+        margin: auto;
+    }
+
+
+
+
+    .container .item-img {
+        position: relative;
+        width: 50%;
+    }
+
+
+    #phone-cover .container .item-img img {
+        height: 400px;
+        position: absolute;
+        top: 10%;
+        left: -10%;
+    }
+
+    #phone-cover .container:nth-child(2) .item-img img {
+        flex-wrap: wrap;
+    }
+
+    #phone-cover .container:nth-child(3) .item-img img {
+        height: 480px;
+        left: -25%;
+        top: -15%;
+    }
+
+    .container .item-text h2 {
+        font-size: 3rem;
+    }
+
+    .container .item-text li {
+        font-size: 1.25rem;
+    }
+
+    .title h2 {
+        font-size: 1.25rem;
+    }
+
+    .container .boxes {
+        padding: 3rem 0;
+        gap: 20px;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .box a img {
+        width: 250px;
     }
 }
 
@@ -652,9 +734,82 @@ footer {
         top: 0%;
         left: 14%;
     }
-    
+
     .tag-line p {
         font-size: 0.6rem;
+    }
+
+
+    .Indian-flag {
+        height: 3vh;
+    }
+
+    .chakra img {
+        width: 39px;
+    }
+
+    .Indian-flag h3 {
+        font-size: 1.125rem;
+    }
+
+
+    #phone-cover .container {
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+        width: 100%;
+        height: 90vh;
+        margin: auto;
+    }
+
+    .container .item-img {
+        position: relative;
+        width: 50%;
+    }
+
+
+    #phone-cover .container .item-img img {
+        height: 300px;
+        position: absolute;
+        top: 10%;
+        left: -10%;
+    }
+
+    #phone-cover .container:nth-child(2) .item-img img {
+        flex-wrap: wrap;
+        left: -30%;
+    }
+
+    #phone-cover .container:nth-child(3) .item-img img {
+        height: 440px;
+        left: -55%;
+        top: -15%;
+    }
+
+    .container .item-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .container .item-text li {
+        font-size: 1.125rem;
+    }
+
+    /* more category */
+    .title h2 {
+        font-size: 1.125rem;
+    }
+
+    .container .boxes {
+        padding: 3rem 0;
+        gap: 20px;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .box a img {
+        width: 200px;
     }
 }
 
@@ -669,8 +824,84 @@ footer {
         top: 0%;
         left: 10%;
     }
-    
+
     .tag-line p {
         font-size: 0.5rem;
+    }
+
+
+    .Indian-flag {
+        height: 2.5vh;
+    }
+
+    .chakra img {
+        width: 28px;
+    }
+
+    .Indian-flag h3 {
+        font-size: 1rem;
+    }
+
+
+    #phone-cover .container {
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+        width: 100%;
+        height: 90vh;
+        margin: auto;
+    }
+
+    .container .item-img {
+        position: relative;
+        width: 50%;
+    }
+
+
+    #phone-cover .container .item-img img {
+        height: 300px;
+        position: absolute;
+        top: 10%;
+        left: -15%;
+    }
+
+    #phone-cover .container:nth-child(2) {
+        flex-wrap: wrap;
+    }
+
+    #phone-cover .container:nth-child(2) .item-img img {
+        left: -30%;
+    }
+
+    #phone-cover .container:nth-child(3) .item-img img {
+        height: 350px;
+        left: -55%;
+        top: 15%;
+    }
+
+    .container .item-text h2 {
+        font-size: 2rem;
+    }
+
+    .container .item-text li {
+        font-size: 1rem;
+    }
+
+    /* more category */
+    .title h2 {
+        font-size: 1.1rem;
+    }
+
+    .container .boxes {
+        padding: 3rem 0;
+        gap: 20px;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .box a img {
+        width: 250px;
     }
 }
