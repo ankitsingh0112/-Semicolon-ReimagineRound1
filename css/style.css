@@ -257,9 +257,9 @@ button:hover {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: white;
+    /*background: white;*/
+    background-image: linear-gradient(#FF9A33, white, #138707);
     mix-blend-mode: screen;
-
 }
 
 .tag-line {
@@ -289,7 +289,7 @@ main {
     display: flex;
     flex-direction: column;
     text-shadow: 0 0 10px black;
-    
+
 }
 
 #phone-cover .container {
@@ -314,6 +314,7 @@ main {
     position: relative;
     height: 30em;
     width: 20em;
+    border: 2px solid magenta;
 }
 
 .back-cover {
@@ -327,6 +328,7 @@ main {
     background-size: cover;
     background-position: center;
 }
+
 .mug {
     background: fixed url(/images/background/mug-modified.webp) no-repeat;
     background-size: cover;
@@ -415,30 +417,34 @@ main {
     }
 }
 
-
+#category {
+    background: fixed url(/images/background/5234064.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem 0;
+}
 
 #category .container {
-    background-color: white;
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
     overflow: hidden;
 }
 
 .title {
-    border: 2px solid #EEEEEE;
+    border-radius: 13px;
+    border: 2px solid black;
     padding: 10px;
     position: relative;
 }
 
 .title::before {
     content: "";
-    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    border: 2px solid black;
     position: absolute;
     left: -101%;
     top: 50%;
@@ -447,7 +453,8 @@ main {
 
 .title::after {
     content: "";
-    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    border: 2px solid black;
     position: absolute;
     right: -101%;
     top: 50%;
@@ -455,12 +462,13 @@ main {
 }
 
 .title h2 {
-    color: #555555;
+    color: black;
     font-size: 1.825rem;
 }
 
 .container .boxes {
-    padding: 3rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -479,7 +487,7 @@ main {
 footer {
     background: #FFBB1A;
     color: #fff;
-    padding: 100px 0 30px;
+    padding: 60px 0 30px 0;
     border-radius: 25px 25px 0 0;
     font-size: 13px;
     line-height: 20px;
@@ -618,20 +626,14 @@ footer {
         top: 18%;
         left: 20%;
     }
-    
+
     .tag-line p {
         font-size: 1.15rem;
     }
 }
 
 @media (max-width:991px) {
-    .nav-menu .nav-item {
-        display: none;
-    }
-
-    .search-cart {
-        display: none;
-    }
+    
 
     .banner h2 {
         top: -13%;
@@ -644,65 +646,355 @@ footer {
         left: 16%;
         line-height: 80vh;
     }
-    
+
     .tag-line p {
         font-size: 1.05rem;
     }
 }
 
 @media (max-width: 767px) {
+    .nav-menu .nav-item {
+        display: none;
+    }
+
+    .search-cart {
+        display: none;
+    }
+    
+    .hidden1 {
+        transform: translateX(-100%);
+    }
+
+
+    .show {
+        transform: translateX(0);
+    }
+    .banner {
+        height: 25vh;
+    }
+
     .banner h2 {
-        top: -15%;
-        left: 0;
+        top: -60%;
+        left: 2%;
         font-size: 3rem;
         line-height: 40vh;
     }
 
     .tag-line {
-        top: 0%;
+        top: -10%;
         left: 14%;
-        line-height: 50vh;
+        line-height: 45vh;
     }
-    
+
     .tag-line p {
         font-size: 0.9rem;
     }
-
-    .banner {
-        height: 40vh;
+       
+    .container .item-img {
+        position: relative;
+        height: 20em;
+        width: 18em;
     }
+
+    #phone-cover .container .item-img img {
+        height: 18em;
+        top: 0%;
+        left: 0%;
+    }
+
+    .container .item-text h2 {
+        font-size: 2.75rem;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .container .item-text li {
+        font-size: 1rem;
+        margin: 10px 0 10px 25px;
+        -webkit-text-stroke: 0.2px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .title {
+        border-radius: 13px;
+        border: 2px solid black;
+        padding: 8px;
+        position: relative;
+    }
+
+    .title::before {
+        content: "";
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        left: -102%;
+        top: 50%;
+        width: 100%;
+    }
+
+    .title::after {
+        content: "";
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        right: -102%;
+        top: 50%;
+        width: 100%;
+    }
+
+    .title h2 {
+        font-size: 1.125rem;
+    }
+
+    .container .boxes {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .box a img {
+        width: 250px;
+    }
+
 }
 
 @media (max-width: 575.5px) {
+    
+    .Indian-flag {
+        width: 100%;
+        height: 4.5vh;
+    }
+
+    .chakra img {
+        width: 35px;
+        left: 50%;
+        top: 0;
+    }
+
+    .Indian-flag h3 {
+        font-size: 1.5rem;
+        padding: 0 6rem;
+        letter-spacing: 2px;
+    }
+
+    button {
+        border: 1px solid white;
+        font-weight: 400;
+        width: 90px;
+        height: 35px;
+        font-size: 0.625rem;
+    }
+
     .banner h2 {
-        top: -10%;
+        top: -55%;
         left: 0;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .tag-line {
-        top: 0%;
+        top: -15%;
         left: 14%;
     }
-    
+
     .tag-line p {
         font-size: 0.6rem;
     }
+
+    
+    .container .item-img {
+        position: relative;
+        height: 20em;
+        width: 18em;
+    }
+
+    #phone-cover .container .item-img img {
+        height: 18em;
+        top: 0%;
+        left: 0%;
+    }
+
+    .container .item-text h2 {
+        font-size: 2.25rem;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .container .item-text li {
+        font-size: 1rem;
+        margin: 10px 0 10px 25px;
+        -webkit-text-stroke: 0.2px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .title {
+        border-radius: 13px;
+        border: 2px solid black;
+        padding: 8px;
+        position: relative;
+    }
+
+    .title::before {
+        content: "";
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        left: -102%;
+        top: 50%;
+        width: 100%;
+    }
+
+    .title::after {
+        content: "";
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        right: -102%;
+        top: 50%;
+        width: 100%;
+    }
+
+    .title h2 {
+        font-size: 1rem;
+    }
+
+    .container .boxes {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .box a img {
+        width: 250px;
+    }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 392px) {
+
+    .Indian-flag {
+        width: 100%;
+        height: 3.5vh;
+    }
+
+    .chakra img {
+        width: 29px;
+        left: 50%;
+        top: 0;
+    }
+
+    .Indian-flag h3 {
+        font-size: 1.25rem;
+        padding: 0 6rem;
+        letter-spacing: 2px;
+    }
+
+    button {
+        border: 1px solid white;
+        color: white;
+        border-radius: 3px;
+        font-weight: 400;
+        width: 90px;
+        height: 30px;
+        font-size: 0.625rem;
+
+    }
+
+
     .banner h2 {
-        top: -7%;
+        top: -45%;
         left: 0;
         font-size: 1.825rem;
     }
 
     .tag-line {
-        top: 0%;
+        top: -21%;
         left: 10%;
     }
-    
+
     .tag-line p {
         font-size: 0.5rem;
+    }
+
+    .container .item-img {
+        position: relative;
+        height: 16em;
+        width: 16em;
+    }
+
+    #phone-cover .container .item-img img {
+        height: 15em;
+        top: 0%;
+        left: 0%;
+    }
+
+    .container .item-text h2 {
+        font-size: 1.825rem;
+        -webkit-text-stroke: 0.5px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .container .item-text li {
+        font-size: 0.725rem;
+        margin: 10px 0 10px 25px;
+        -webkit-text-stroke: 0.1px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .title {
+        border-radius: 13px;
+        border: 2px solid black;
+        padding: 8px;
+        position: relative;
+    }
+
+    .title::before {
+        content: "";
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        left: -102%;
+        top: 50%;
+        width: 100%;
+    }
+
+    .title::after {
+        content: "";
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        right: -102%;
+        top: 50%;
+        width: 100%;
+    }
+
+    .title h2 {
+        font-size: 0.825rem;
+    }
+
+    .container .boxes {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .box a img {
+        width: 250px;
     }
 }

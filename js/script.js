@@ -56,7 +56,8 @@ gsap.from(".container .phone-cover img", {
     trigger: ".container .phone-cover img",
     scroller: "body",
     /*markers:true,*/
-    start: "top 50%",
+    start: "top 80%",
+    end:"50% 50%",
     toggleActions: "play none none reverse",
   },
 });
@@ -87,10 +88,26 @@ gsap.from(".container .boxes .box a img", {
     trigger: ".container .boxes .box a img",
     scroller: "body",
     /*markers:true,*/
-    start: "top 90%",
+    start: "10% 90%",
+    end: "50% 50%",
     toggleActions: "play none none reverse",
   },
 });
+
+// footer animation
+gsap.from("footer .row", {
+  y:100,
+  opacity:0,
+  duration:1,
+  stagger:0.2,
+  ease: "power3.inout",
+  scrollTrigger: {
+    trigger:".row",
+    scroller:"body",
+    start:"10% 80%",
+    toggleActions:"play none none reverse",
+  }
+})
 
 // tilt effect on items
 VanillaTilt.init(document.querySelectorAll(".item-img"), {
