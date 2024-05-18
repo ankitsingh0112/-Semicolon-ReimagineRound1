@@ -31,14 +31,15 @@ hr {
 }
 
 button {
-    border: 1px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     border-radius: 3px;
+    font-weight: 600;
     width: 100px;
     height: 40px;
     display: block;
     cursor: pointer;
-    background: linear-gradient(to right, #FFBB1A 50%, white 50%);
+    background: linear-gradient(to right, #FFBB1A 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .3s ease-out;
@@ -284,16 +285,25 @@ main {
     position: relative;
 }
 
+#phone-cover {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 10px black;
+    
+}
+
 #phone-cover .container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
+    gap: 5%;
     overflow: hidden;
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    padding: 5% 10%;
     /*background-color: black;*/
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #phone-cover .container:nth-child(2) {
@@ -302,16 +312,33 @@ main {
 
 .container .item-img {
     position: relative;
-    width: 20%;
-    height: 400px;
+    height: 30em;
+    width: 20em;
+}
+
+.back-cover {
+    background: fixed url(/images/background/cover-bg2-modified.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.keychain {
+    background: fixed url(/images/background/keychain-modified.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mug {
+    background: fixed url(/images/background/mug-modified.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
 #phone-cover .container .item-img img {
-    height: 400px;
+    height: 28em;
     position: absolute;
     top: 0%;
-    left: 0%;
+    left: -8%;
     overflow: visible;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.53));
 }
@@ -336,12 +363,16 @@ main {
     font-size: 4rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFBB1A;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: white;
 }
 
 .container .item-text li {
     font-size: 1.25rem;
     margin: 10px 0 10px 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: white;
 }
 
 
@@ -587,7 +618,7 @@ footer {
         top: 18%;
         left: 20%;
     }
-
+    
     .tag-line p {
         font-size: 1.15rem;
     }
@@ -613,17 +644,9 @@ footer {
         left: 16%;
         line-height: 80vh;
     }
-
+    
     .tag-line p {
         font-size: 1.05rem;
-    }
-
-    .Indian-flag {
-        height: 5vh;
-    }
-
-    .chakra img {
-        width: 60px;
     }
 }
 
@@ -640,86 +663,13 @@ footer {
         left: 14%;
         line-height: 50vh;
     }
-
+    
     .tag-line p {
         font-size: 0.9rem;
     }
 
     .banner {
         height: 40vh;
-    }
-
-    .Indian-flag {
-        height: 4vh;
-    }
-
-    .chakra img {
-        width: 50px;
-    }
-
-    .Indian-flag h3 {
-        font-size: 1.25rem;
-    }
-
-
-    #phone-cover .container {
-        align-items: center;
-        justify-content: center;
-        padding: 0 10%;
-        width: 100%;
-        height: 90vh;
-        margin: auto;
-    }
-
-
-
-
-    .container .item-img {
-        position: relative;
-        width: 50%;
-    }
-
-
-    #phone-cover .container .item-img img {
-        height: 400px;
-        position: absolute;
-        top: 10%;
-        left: -10%;
-    }
-
-    #phone-cover .container:nth-child(2) .item-img img {
-        flex-wrap: wrap;
-    }
-
-    #phone-cover .container:nth-child(3) .item-img img {
-        height: 480px;
-        left: -25%;
-        top: -15%;
-    }
-
-    .container .item-text h2 {
-        font-size: 3rem;
-    }
-
-    .container .item-text li {
-        font-size: 1.25rem;
-    }
-
-    .title h2 {
-        font-size: 1.25rem;
-    }
-
-    .container .boxes {
-        padding: 3rem 0;
-        gap: 20px;
-    }
-
-    .box {
-        margin: 1rem 0;
-    }
-
-    .box a img {
-        width: 250px;
     }
 }
 
@@ -734,82 +684,9 @@ footer {
         top: 0%;
         left: 14%;
     }
-
+    
     .tag-line p {
         font-size: 0.6rem;
-    }
-
-
-    .Indian-flag {
-        height: 3vh;
-    }
-
-    .chakra img {
-        width: 39px;
-    }
-
-    .Indian-flag h3 {
-        font-size: 1.125rem;
-    }
-
-
-    #phone-cover .container {
-        align-items: center;
-        justify-content: center;
-        padding: 0 10%;
-        width: 100%;
-        height: 90vh;
-        margin: auto;
-    }
-
-    .container .item-img {
-        position: relative;
-        width: 50%;
-    }
-
-
-    #phone-cover .container .item-img img {
-        height: 300px;
-        position: absolute;
-        top: 10%;
-        left: -10%;
-    }
-
-    #phone-cover .container:nth-child(2) .item-img img {
-        flex-wrap: wrap;
-        left: -30%;
-    }
-
-    #phone-cover .container:nth-child(3) .item-img img {
-        height: 440px;
-        left: -55%;
-        top: -15%;
-    }
-
-    .container .item-text h2 {
-        font-size: 2.5rem;
-    }
-
-    .container .item-text li {
-        font-size: 1.125rem;
-    }
-
-    /* more category */
-    .title h2 {
-        font-size: 1.125rem;
-    }
-
-    .container .boxes {
-        padding: 3rem 0;
-        gap: 20px;
-    }
-
-    .box {
-        margin: 1rem 0;
-    }
-
-    .box a img {
-        width: 200px;
     }
 }
 
@@ -824,84 +701,8 @@ footer {
         top: 0%;
         left: 10%;
     }
-
+    
     .tag-line p {
         font-size: 0.5rem;
-    }
-
-
-    .Indian-flag {
-        height: 2.5vh;
-    }
-
-    .chakra img {
-        width: 28px;
-    }
-
-    .Indian-flag h3 {
-        font-size: 1rem;
-    }
-
-
-    #phone-cover .container {
-        align-items: center;
-        justify-content: center;
-        padding: 0 10%;
-        width: 100%;
-        height: 90vh;
-        margin: auto;
-    }
-
-    .container .item-img {
-        position: relative;
-        width: 50%;
-    }
-
-
-    #phone-cover .container .item-img img {
-        height: 300px;
-        position: absolute;
-        top: 10%;
-        left: -15%;
-    }
-
-    #phone-cover .container:nth-child(2) {
-        flex-wrap: wrap;
-    }
-
-    #phone-cover .container:nth-child(2) .item-img img {
-        left: -30%;
-    }
-
-    #phone-cover .container:nth-child(3) .item-img img {
-        height: 350px;
-        left: -55%;
-        top: 15%;
-    }
-
-    .container .item-text h2 {
-        font-size: 2rem;
-    }
-
-    .container .item-text li {
-        font-size: 1rem;
-    }
-
-    /* more category */
-    .title h2 {
-        font-size: 1.1rem;
-    }
-
-    .container .boxes {
-        padding: 3rem 0;
-        gap: 20px;
-    }
-
-    .box {
-        margin: 1rem 0;
-    }
-
-    .box a img {
-        width: 250px;
     }
 }
