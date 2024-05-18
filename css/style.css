@@ -931,7 +931,7 @@ footer {
 
     
     .container:nth-child(1) .item-img {
-        border: 2px solid gray;
+        margin-top: 5%;
         height: 10em;
         width: 10em;
     }
@@ -939,7 +939,7 @@ footer {
     
     #phone-cover .container:nth-child(1) .item-img img {
         height: 10em;
-        top: -5%;
+        top: -10%;
         left: 0%;
     }
 
