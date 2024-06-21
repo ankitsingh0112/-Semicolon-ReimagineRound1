@@ -57,7 +57,6 @@ gsap.from(".container .phone-cover img", {
     scroller: "body",
     /*markers:true,*/
     start: "top 80%",
-    end:"50% 50%",
     toggleActions: "play none none reverse",
   },
 });
