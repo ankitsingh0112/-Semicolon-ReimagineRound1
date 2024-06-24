@@ -317,7 +317,7 @@ main {
 #phone-cover {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    
+
 }
 
 
@@ -344,7 +344,9 @@ main {
 }
 
 
-
+.container .item-text {
+    width: 65%;
+}
 
 .container .item-text h2 {
     font-size: 4rem;
@@ -355,15 +357,27 @@ main {
     -webkit-text-stroke-color: white;
 }
 
-.container .item-text ul li {
+.container .item-text ul li{
     font-weight: 600;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     margin: 10px 0 10px 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: cursive;
+    color: #fff;
+    font-style: italic;
+    text-wrap: wrap;
     -webkit-text-stroke: 0.2px;
     -webkit-text-stroke-color: #FFBB1A;
 }
 
+.container .item-text .description {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 10px 0px 10px 10px;
+    font-family: monospace;
+    color: black;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: #FFBB1A;
+}
 
 .keychain-img img:nth-child(1) {
     animation: swing ease-in-out 1.5s infinite alternate;
@@ -451,6 +465,7 @@ main {
 .title h2 {
     color: black;
     font-size: 1.825rem;
+    font-family: monospace;
 }
 
 .container .boxes {
@@ -687,6 +702,10 @@ footer {
         left: 0%;
     }
 
+    .container .item-text {
+        width: 75%;
+    }
+
     .container .item-text h2 {
         font-size: 2.75rem;
         -webkit-text-stroke: 0.8px;
@@ -802,6 +821,10 @@ footer {
         height: 14em;
         top: 0%;
         left: 0%;
+    }
+
+    .container .item-text {
+        width: 100%;
     }
 
     .container .item-text h2 {
@@ -942,6 +965,10 @@ footer {
         padding: 8% 10%;
     }
 
+    .container .item-text {
+        width: 100%;
+    }
+
     .container .item-text h2 {
         font-size: 1.725rem;
         -webkit-text-stroke: 0.5px;
@@ -996,9 +1023,10 @@ footer {
 
     .box {
         margin: 1rem 0;
+        padding: 0px 10px;
     }
 
     .box a img {
-        width: 250px;
+        width: 150px;
     }
 }
