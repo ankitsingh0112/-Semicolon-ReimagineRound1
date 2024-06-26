@@ -8,6 +8,10 @@ window.onscroll = function () {
   }
 };
 
+function toggleMobileMenu(menu) {
+  menu.classList.toggle("open");
+}
+
 // animation effect
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
