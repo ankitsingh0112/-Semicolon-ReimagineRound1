@@ -40,12 +40,11 @@ const hiddenElements2 = document.querySelectorAll(".hidden2");
 hiddenElements2.forEach((el) => observer2.observe(el));
 
 // navbar animation
-gsap.from(".navbar div", {
+gsap.from(".navbar", {
   y: -50,
   opacity: 0,
   delay: 0.4,
-  duration: 0.3,
-  stagger: 0.1,
+  duration: 0.3
 });
 
 // back-cover image animation
