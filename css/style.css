@@ -225,7 +225,6 @@ button:hover {
 #hamburger-icon div {
     width: 35px;
     height: 5px;
-    border: 2px solid black !important;
     border-radius: 5px;
     margin: 6px 0;
     transition: 0.4s;
@@ -234,7 +233,7 @@ button:hover {
 .open .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);
-    background-color: black !important;
+    background-color: #FFBB1A !important;
 }
 
 .open .bar2 {
@@ -244,7 +243,7 @@ button:hover {
 .open .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
-    background-color: black !important;
+    background-color: #FFBB1A !important;
 }
 
 .open .mobile-menu {
