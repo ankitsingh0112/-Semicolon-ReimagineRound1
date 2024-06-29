@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Josefin+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -539,7 +540,8 @@ main {
 .title h2 {
     color: black;
     font-size: 1.825rem;
-    font-family: monospace;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .container .boxes {
@@ -557,6 +559,33 @@ main {
 
 .box:hover {
     z-index: 10;
+}
+
+.about {
+    width: 90%;
+    height: 80vh;
+    overflow-y: scroll;
+    font-family: "Poppins", sans-serif;
+    color: #555555;
+    padding: 2% 3%;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 50px 0px 0px 50px;
+}
+
+.about h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.825rem;
+}
+.about h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.about p{
+    font-size: 0.875rem;
 }
 
 
@@ -686,6 +715,54 @@ footer {
     font-size: 1rem;
     margin-top: 1rem;
     opacity: 0.8;
+}
+
+/* social-icon */
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px 0px 0px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icon i {
+    font-size: 25px;
+}
+
+.social-icon:nth-child(1):hover {
+    background-color: #3A589D;
+    color: white;
+}
+.social-icon:nth-child(2):hover {
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    color: white;
+}
+.social-icon:nth-child(3):hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+.social-icon:nth-child(4):hover {
+    background-color: rgba(255, 55, 0, 0.772);
+    color: white;
+}
+.social-icon:nth-child(5):hover {
+    background-color: #0077B5;
+    color: white;
+}
+.social-icon:nth-child(6):hover {
+    background-color: #FF0808;
+    color: white;
 }
 
 
@@ -957,6 +1034,22 @@ footer {
     .box a img {
         width: 250px;
     }
+
+    .about {
+        border-radius: 0px;
+        padding: 2% 4%;
+    }
+
+    .about h2{
+        font-size: 1.625rem;
+    }
+    .about h3{
+        font-size: 1.3rem;
+    }
+    
+    .about p{
+        font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 390px) {
@@ -1102,5 +1195,20 @@ footer {
 
     .box a img {
         width: 250px;
+    }
+
+    .about {
+        border-radius: 0px;
+    }
+    
+    .about h2{
+        font-size: 1.425rem;
+    }
+    .about h3{
+        font-size: 1.125rem;
+    }
+    
+    .about p{
+        font-size: 0.875rem;
     }
 }
