@@ -1166,18 +1166,18 @@ footer {
     }
 
     .container .item-text h2 {
-        font-size: 1.725rem;
+        font-size: 1.825rem;
         -webkit-text-stroke: 0.5px;
         -webkit-text-stroke-color: white;
     }
 
     .container .item-text ul li {
-        font-size: 0.825rem;
+        font-size: 0.975rem;
         margin: 10px 0 10px 25px;
     }
 
     .container .item-text .description {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .title {
