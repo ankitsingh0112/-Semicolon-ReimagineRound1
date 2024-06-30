@@ -107,7 +107,7 @@ gsap.from("footer .row", {
   scrollTrigger: {
     trigger:".row",
     scroller:"body",
-    start:"10% 80%",
+    start:"10% 90%",
     toggleActions:"play none none reverse",
   }
 })

@@ -934,8 +934,14 @@ footer {
         width: 250px;
     }
 
+    .about {
+        border-radius: 0px;
+        padding: 2% 4%;
+        width: 95%;
+    }
+
     .feedback {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 }
@@ -1080,7 +1086,11 @@ footer {
 
     .feedback {
         height: 60px;
-        font-size: 1.725rem;
+        font-size: 1.425rem;
+    }
+
+    .row:nth-last-child(1) p {
+        font-size: 0.825rem;
     }
 }
 
@@ -1244,6 +1254,6 @@ footer {
     }
 
     .feedback {
-        font-size: 1.35rem;
+        font-size: 1.125rem;
     }
 }
